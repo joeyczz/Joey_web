@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Joey</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
-<body>
 
+<body>
+<div class="container">
+    <div class="auth-modal-box">
+        <form class="auth-form">
+            <i title="关闭" class="close-btn ion-close-round"></i>
+            <div class="panel">
+                <svg>
+                    <pattern id="pt--fire" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                        <image xlink:href="../source/fire.gif" width="100%" height="100%"/>
+                    </pattern>
+                    <text x="50%" y="100" class="t--fire" text-anchor="middle">登录</text>
+                </svg>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input name="loginPhoneOrEmail" maxlength="64" placeholder="邮箱 / 手机" class="input">
+                    </div>
+                    <div class="input-box">
+                        <input name="loginPassword" type="password" maxlength="64" placeholder="密码" class="input">
+                    </div>
+                </div>
+                <button type="button" class="btn">登录</button>
+                <div class="prompt-box">
+                    没有账号？
+                    <span class="clickable">注册</span>
+                    <a href="/reset-password" class="right clickable">忘记密码</a></div>
+            </div>
+            <div class="oauth-box">
+                第三方账号登录：
+                <img title="微博" alt="微博" src="../source/weibo.svg" class="oauth-btn">
+                <img title="微信" alt="微信" src="../source/wechat.svg" class="oauth-btn">
+                <img title="GitHub" alt="GitHub" src="../source/github.svg" class="oauth-btn">
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
